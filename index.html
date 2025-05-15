@@ -3,48 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Burbujas para Dhanna 💖</title>
+  <title>Burbujas de Amor</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>💖 Dhanna, cada burbuja lleva un mensaje de amor 💖</h1>
-    <button onclick="playMusic()">🎵 Reproducir música</button>
+    <h1>Para Dhanna, con todo mi amor 💖</h1>
     <div id="bubble-container"></div>
+    <audio id="bg-music" src="musica.mp3" autoplay loop></audio>
+
   </div>
-
-  <audio id="bg-music" src="musica.mp3" loop muted></audio>
-
-  <script>
-    // Reproduce la música al hacer clic
-    function playMusic() {
-      const audio = document.getElementById('bg-music');
-      audio.muted = false;
-      audio.play();
-    }
-
-    // Generador de burbujas
-    const messages = [
-      "Te amo 💖", "Eres mi todo 🌟", "Perdóname 🙏",
-      "Siempre tú 💌", "Por siempre juntos 💍", "Tú y yo ❤️"
-    ];
-
-    function createBubble() {
-      const bubble = document.createElement('div');
-      bubble.classList.add('bubble');
-      bubble.innerText = messages[Math.floor(Math.random() * messages.length)];
-      bubble.style.left = `${Math.random() * 100}%`;
-      bubble.style.animationDuration = `${5 + Math.random() * 5}s`;
-      bubble.style.fontSize = `${12 + Math.random() * 10}px`;
-
-      document.getElementById('bubble-container').appendChild(bubble);
-
-      setTimeout(() => {
-        bubble.remove();
-      }, 10000);
-    }
-
-    setInterval(createBubble, 1000);
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
