@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
@@ -50,4 +51,23 @@ h1 {
     transform: translateY(-10vh) scale(1.5);
     opacity: 0;
   }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .burbuja {
+    width: 12vw;
+    height: 12vw;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  /* Ajustes a otros elementos que se vean mal en móvil */
 }
