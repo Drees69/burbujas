@@ -1,12 +1,13 @@
 const messages = [
-  "Te amo con todo mi corazón ❤️",
-  "Eres mi razón de sonreír 😊",
+  "Niña Dhanna ❤️",
+  "Siempre serás mi persona favorita 😍",
   "Contigo todo es mejor 💕",
-  "Cada día te quiero más 💌",
-  "Eres mi sol en días nublados ☀️",
-  "Siempre serás mi persona favorita 🥰",
-  "Quiero un para siempre contigo 💍",
-  "Tú y yo, por siempre ❤️",
+  "Cada día te quiero más 💫",
+  "Eres ese instante eterno que quiero repetir toda la vida 🌛",
+  "Te pienso, y sonrío 🤭",
+  "No hay distancia que apague lo que siento por ti 👌",
+  "No hay nada más bonito que verte feliz 🤗",
+  "Gracias por existir y por ser tú 🦋",
 ];
 
 function createBubble() {
